@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Наш сайт предлагает лучшие услуги в области веб-разработки. Узнайте больше о нашем опыте и проектах.">
+    <meta name="keywords" content="веб-разработка, услуги, портфолио, контакт">
+    <meta name="author" content="Super-site">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../project/scripts/css/style.css?v=123">
+    <script src="../project/scripts/js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <a href="index.html" class="logo"><img src="../project/image/logo.jpg" alt=""></a>
+            <ul id="nav-menu">
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <!--Изменить форму ввода сообщения, чтобы её нельзя было растягивать-->
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form action="send.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="cta-button">Отправить сообщение</button>
+        </form>
+    </section>
+
+<footer>
+        <p>© 2024 Бизнес-сайт. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
