@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\project",
-    "\\project\\image"
+    "\\project\\image",
+    "\\project\\scripts",
+    "\\project\\scripts\\css",
+    "\\project\\scripts\\js"
   ],
-  "SelectedNode": "\\project\\contact.html",
+  "SelectedNode": "\\project\\scripts\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }

@@ -8,6 +8,7 @@
     <meta name="keywords" content="веб-разработка, услуги, портфолио, контакт">
     <meta name="author" content="Super-site">
     <title>Главная</title>
+    <link rel="stylesheet" href="../project/scripts/css/popupContainer.css?v=123">
     <link rel="stylesheet" href="../project/scripts/css/style.css?v=123">
     <script src="../project/scripts/js/script.js"></script>
 </head>
@@ -30,22 +31,85 @@
 </header>
 
 <section class="mp">
-
+    
     <div class="mp-introduction">
         <div class="mp-introduction-bg">
             <img class="mp-introduction-bg-image" src="image/mp-indroduction-bg-image.jpg">
+            <button id="startButton">Открыть окно</button>
             <div class="mp-introduction-bg-text">
-                <h1>
-                Создание, продвижение и поддержка сайтов
-                </h1>
+                <div id="popupContainer" class="popup-container">
+                    <!-- Шаг 1 -->
+                    <div id="step1" class="step">
+                        <h2>Выберите нужный тип сайта:</h2>
+                        <select>
+                            <option value="multi-page">Сайт многостраничный</option>
+                            <option value="ecommerce">Интернет-магазин</option>
+                            <option value="landing">Лендинг</option>
+                            <option value="business-card">Сайт-визитка</option>
+                            <option value="not-sure">Пока не определился(-ась)</option>
+                        </select>
+                        <button id="next1">Дальше</button>
+                    </div>
+                    <!-- Шаг 2 -->
+                    <div id="step2" class="step">
+                        <h2>Выберите или впишите вид вашей деятельности:</h2>
+                        <select>
+                            <option value="legal">Юридические услуги</option>
+                            <option value="repair">Ремонт и отделка</option>
+                            <option value="construction">Строительные услуги</option>
+                            <option value="furniture">Изготовление мебели</option>
+                            <option value="equipment">Спецтехника, запчасти</option>
+                            <option value="tourism">Туризм и отдых</option>
+                            <option value="auto-service">Автосервис</option>
+                            <option value="windows">Окна</option>
+                        </select>
+                        <button id="next2">Дальше</button>
+                    </div>
+                    <!-- Шаг 3 -->
+                    <div id="step3" class="step">
+                        <h2>Для наполнения вашего сайта есть:</h2>
+                        <div class="step3text">
+                            <input type="checkbox" style="width: 20px; height: 20px;"> <p>Тексты</p>
+                        </div>
+                        <div class="step3text">
+                            <input type="checkbox" style="width: 20px; height: 20px;"> <p>Фото/Картинки</p>
+                        </div>
+                        <div class="step3text">
+                            <input type="checkbox" style="width: 20px; height: 20px;"> <p>Видео</p>
+                        </div>
+                        <div class="step3text">
+                            <input type="checkbox" style="width: 20px; height: 20px;"> <p>Ничего</p>
+                        </div>
+                        <button id="next3">Дальше</button>
+                    </div>
+                    <!-- Шаг 4 -->
+                    <div id="step4" class="step">
+                        <h2>Размещение информации на вашем сайте:</h2>
+                        <div class="step3text">
+                            <input type="radio" name="placement" value="service" style="width: 20px; height: 20px;"> <p>Требуется услуга по размещению</p>
+                        </div>
+                        <div class="step3text">
+                            <input type="radio" name="placement" value="self" style="width: 20px; height: 20px;"> <p>Самостоятельно</p>
+                        </div>
+                        <br>
+                        <br>
+                        <button id="finish">Отправить</button>
+                        <br>
+                        <br>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="overlay" class="overlay"></div>
     </div>
 
     <div class="mp-services">
 
-        <div class="mp-services-bg-box">    
-            <div class="mp-services-bg-box-landing">
+        <div class="mp-services-bg-box">
+            <div class="mp-services-b   g-box-landing">
                 <img class="mp-services-bg-box-landing" src="image/mp-services-bg-box-landing.jpg">
                 <div class="mp-services-bg-box-landing-text">
                     <h2>Лэндинг</h2>
@@ -80,13 +144,13 @@
 
     <div class="mp-features">
         <h1>
-                Преимущества наших сайтов:
+            Преимущества наших сайтов:
         </h1>
     </div>
 
     <div class="mp-portfolio">
         <h1>
-                Портфолио
+            Портфолио
         </h1>
         <p>Большой опыт работы!</p>
         <div class="mp-portfolio-case">
@@ -113,19 +177,19 @@
 
     <div class="mp-development">
         <h1>
-                Мы лучше других, потому что:
+            Мы лучше других, потому что:
         </h1>
     </div>
 
     <div class="mp-services">
         <h1>
-                Уже решились? Оставьте заявку!
+            Уже решились? Оставьте заявку!
         </h1>
     </div>
 
     <div class="mp-faq">
         <h1>
-                Ваши вопросы и наши ответы:
+            Ваши вопросы и наши ответы:
         </h1>
     </div>
 
