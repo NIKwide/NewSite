@@ -68,7 +68,7 @@ input::placeholder {
 color: #ccc;
 }
 #startButton {
-display: block;
+/*display: block;*/
 text-decoration: none;
 box-sizing: border-box;
 padding: 20px 30px;

@@ -122,13 +122,13 @@ nav ul {
 
     .mp-introduction-bg-text{
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .mp-introduction-bg-text h1 {
-        font-size: 2.5rem;
+        font-size: calc(1.375rem + 1.5vw);
     }
 
 .mp-services{
@@ -156,18 +156,20 @@ nav ul {
             width: 30%;
         }
 
-        .mp-services-bg-box-landing-text,
-        .mp-services-bg-box-businesscard-text,
-        .mp-services-bg-box-multifunctional-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            border-radius: 5px;
-        }
+.mp-services-bg-box-landing-text,
+.mp-services-bg-box-businesscard-text,
+.mp-services-bg-box-multifunctional-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20vw;
+    font-size: calc(0.1rem + 0.8vw);
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
 
         .mp-services-bg-box-landing-text{
         }
@@ -194,7 +196,6 @@ nav ul {
     }
 
         .mp-case-box img {
-            width: 450px;
             border-radius: 50%;
         }
         .mp-case-box-text{
